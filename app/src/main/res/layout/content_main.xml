@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+
+
+
+    <EditText
+        android:id="@+id/string"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="34"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:text=""
+        android:hint="texto"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:lines="12"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:scrollHorizontally="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textviewfrom"
+            android:layout_width="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="from" />
+        <TextView
+            android:id="@+id/textviewto"
+            android:layout_width="100dp"
+            android:layout_marginLeft="90dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="to" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+
+    >
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/from"
+        android:gravity="left"
+        android:entries="@array/languages"
+        android:padding="5dp"
+
+        >
+    </Spinner>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:id="@+id/to"
+        android:padding="5dp"
+        android:entries="@array/languages"
+        >
+    </Spinner>
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <Button
+        android:id="@+id/traducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="traducir" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="34"
+    >
+
+    <TextView
+        android:id="@+id/textTraductor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="34"
+        android:textIsSelectable="true"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:text="" />
+
+</LinearLayout>
+
+
+</LinearLayout>
+
